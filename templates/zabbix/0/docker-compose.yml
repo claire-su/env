@@ -45,4 +45,4 @@ services:
     - ZBX_SRV_HOST=server
     - ZBX_SRV_PORT=10051
    ports:
-    - "8080:80"
+    - "8081:80"
