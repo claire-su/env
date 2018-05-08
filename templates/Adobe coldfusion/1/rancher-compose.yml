@@ -1,0 +1,5 @@
+.catalog:
+  name: "ColdFusion"
+  version: "v11"
+  description: "Adobe ColdFusion 反序列化漏洞（CVE-2017-3066）"
+  

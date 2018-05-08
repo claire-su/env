@@ -1,0 +1,6 @@
+version: '11'
+services:
+  coldfusion:
+    image: clairesu/coldfusion:11
+    ports:
+      - "8500:8500"
