@@ -1,7 +1,7 @@
 version: '2'
 services:
  server:
-   image: clairesu/zabbix:3.0.3
+   image: vulhub/zabbix:3.0.3-server
    command: server
    depends_on:
     - mysql
@@ -12,7 +12,7 @@ services:
     - DATABASE_PASS=root
     - DATABASE_NAME=zabbix
  agent:
-   image: clairesu/zabbix:3.0.3
+   image: vulhub/zabbix:3.0.3-server
    command: agent
    depends_on:
     - mysql
@@ -26,13 +26,14 @@ services:
     - DATABASE_PASS=root
     - DATABASE_NAME=zabbix
  mysql:
-   image: clairesu/mysql:5
+   image: mysql:5
    environment: 
     - MYSQL_ROOT_PASSWORD=root
     - MYSQL_DATABASE=zabbix
-   
+   volumes:
+    - ./database/:/docker-entrypoint-initdb.d/
  web:
-   image: clairesu/zabbix:3.0.3-web
+   image: vulhub/zabbix:3.0.3-web
    depends_on:
     - server
     - mysql
@@ -45,4 +46,4 @@ services:
     - ZBX_SRV_HOST=server
     - ZBX_SRV_PORT=10051
    ports:
-    - "8081:80"
+    - "8080:80"
