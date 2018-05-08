@@ -30,8 +30,7 @@ services:
    environment: 
     - MYSQL_ROOT_PASSWORD=root
     - MYSQL_DATABASE=zabbix
-   volumes:
-    - ./database/:/docker-entrypoint-initdb.d/
+   
  web:
    image: clairesu/zabbix:3.0.3-web
    depends_on:
