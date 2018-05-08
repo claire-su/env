@@ -1,0 +1,7 @@
+name: zabbix 
+description: |  
+version:  3.0.3
+category:  WEB
+maintainer:  clairesu
+license:  xxx
+projectURL: https://github.com/clairesu/env
