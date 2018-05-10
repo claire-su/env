@@ -1,0 +1,5 @@
+.catalog:
+  name: "couchdb"
+  version: "v2.1.0"
+  description: "Couchdb 垂直权限绕过漏洞（CVE-2017-12635）"
+  
