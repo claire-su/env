@@ -1,0 +1,7 @@
+version: '2'
+services:
+  couchdb:
+    image: clairesu/couchdb:1.6.0
+    ports:
+      - "5984:5984"
+  

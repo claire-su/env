@@ -1,0 +1,5 @@
+.catalog:
+  name: "couchdb"
+  version: "v1.6.0"
+  description: "Couchdb 任意命令执行漏洞（CVE-2017-12636）"
+  
