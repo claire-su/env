@@ -1,0 +1,9 @@
+version: '1.18.8'
+services:
+ web：
+   image: clairesu/aria2：1.18.8
+   ports：
+    - "6800:6800"
+    
+
+   
