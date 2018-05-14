@@ -1,5 +1,0 @@
-.catalog:
-  name: "zabbix"
-  version: "v3.0.3"
-  description: "zabbix latest.php SQL注入漏洞（CVE-2016-10134）"
-  

@@ -1,0 +1,5 @@
+.catalog:
+  name: "apache solr"
+  version: "v.7.0.1"
+  description: "Apache solr XML 实体注入漏洞（CVE-2017-12629）"
+  

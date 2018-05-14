@@ -1,0 +1,5 @@
+.catalog:
+  name: "jmeter"
+  version: "v3.3"
+  description: "Jmeter RMI 反序列化命令执行漏洞（CVE-2018-1297）"
+  
