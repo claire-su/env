@@ -1,0 +1,7 @@
+version: '2'
+services:
+ web:
+   build: .
+   command: php -S 0.0.0.0:8081
+   ports:
+    - "8081:8081"
